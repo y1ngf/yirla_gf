@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: #956962;
+	
+}
+body{
+	background-color: #F8E5DF;
+	margin: auto;/*Centra la caja automaticamente en horizontal*/
+}
+
+h2{
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Lily Script One', cursive;
+	font-weight: lighter;
+}
+h3{
+	text-align: center;
+	font-size: 36px;
+	font-family: 'Lily Script One', cursive;
+	font-weight: lighter;
+	
+}
+h1{
+	font-size: 80px;
+	color: #9470A2;
+}
+header{
+	text-align: center;
+	background-color: #B59CD9;
+}
+
+nav{
+	color: #B59CD9;
+	width: 100%;
+	height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	flex: 1;
+	margin-top: 30px;
+	margin-left: 20;
+	margin-right: 20;
+	padding: 10;
+	padding-bottom: 10px;
+	background-color: #B59CD9;
+}
+
+a{
+	margin: 0 30px;
+	transition: transform .2s; /* Animation */
+}
+
+a:hover{
+    transform: scale(1.5);
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    background-color: #FBBE87;
+    text-align: center;
+    margin-top: 70px;
+    color: #956962;
+}
+
+.flexcont2{
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	margin: 25px;
+	margin-right: 25px;
+	padding: 10px;
+	flex-wrap: wrap;
+	flex: 2;
+}
+
+.flexcont3{
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	margin: 25px;
+}
+
+footer img{
+    margin:13px;
+    transition: transform .2s; /* Animation */
+}
+
+footer img:hover{
+    transform: scale(0.6);
+}
+
+.img_g{
+    margin:5px;
+}
+
+@media screen and (min-width:640px){
+	
+body{
+       margin-left: 70px;
+       margin-right: 70px;
+    }
+header{
+        flex-direction: column;
+    }	
+nav{
+		flex-direction: row;
+
+	}	
+footer{
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	}	
+nav a{
+	margin: 25;
+	padding: 25;
+	}
+ .flexcont2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+	}
+	
+.flexcont3{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+	}
+@media screen and (min-width:1024px){
+	
+nav{
+		flex-direction: row;
+        justify-content: center;
+	}	
+.flexcont2{
+        flex-direction: row;
+	}
+.flexcont3{
+        flex-direction: row;
+	}
